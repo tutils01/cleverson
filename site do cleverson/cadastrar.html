@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastrar-se</title>
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo ao Site De Psicologos</h1>
+        <nav>
+            <ul>
+                <li><a href="atedimentoonline.html">Atendimento Online</a></li>
+                <li><a href="atendimentopresencial.html">Atendimento Presencial</a></li>
+                <li><a href="umpoucosobrenos.html">Um Pouco Sobre Nós</a></li>
+                <li><a href="cadastrar.html">Cadastrar-se</a></li>
+                <li><a href="fazerlogin.html">Fazer Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="register-container">
+        <h2>Cadastrar-se</h2>
+        <form id="registerForm">
+            <label for="username">Usuário:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="confirm-password">Confirmar Senha:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+        <p id="message"></p>
+    </div>
+
+    <script>
+        document.getElementById('registerForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const username = document.getElementById('username').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirm-password').value;
+
+            // Simulação de validação
+            if (password !== confirmPassword) {
+                document.getElementById('message').textContent = 'As senhas não correspondem.';
+                return;
+            }
+
+            // Aqui você pode adicionar lógica para enviar os dados para o servidor
+            document.getElementById('message').textContent = 'Cadastro realizado com sucesso!';
+            document.getElementById('message').style.color = 'green';
+            // Redirecionar ou executar outra ação aqui
+        });
+    </script>
+</body>
+</html>

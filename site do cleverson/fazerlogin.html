@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Fazer Login</title>
+</head>
+<body>
+    
+    <header>
+        <h1>Bem-vindo ao Site De Psicologos</h1>
+        <nav>
+            <ul>
+                <li><a href="atedimentoonline.html">Atendimento Online</a></li>
+                <li><a href="atendimentopresencial.html">Atendimento Presencial</a></li>
+                <li><a href="umpoucosobrenos.html">Um Pouco Sobre Nós</a></li>
+                <li><a href="cadastrar.html">Cadastrar-se</a></li>
+                <li><a href="fazerlogin.html">Fazer Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="login-container">
+        <h2>Fazer Login</h2>
+        <form id="loginForm">
+            <label for="username">Usuário:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Entrar</button>
+        </form>
+        <p id="message"></p>
+    </div>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            // Simulação de validação
+            if (username === 'admin' && password === '123456') {
+                document.getElementById('message').textContent = 'Login bem-sucedido!';
+                document.getElementById('message').style.color = 'green';
+                // Redirecionar ou executar outra ação aqui
+            } else {
+                document.getElementById('message').textContent = 'Usuário ou senha incorretos.';
+            }
+        });
+    </script>
+</body>
+</html>

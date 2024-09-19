@@ -1,0 +1,213 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #ffffff;
+    border: 1px solid #dddddd;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #35424a;
+    color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* ----------------------------------------------------------*/
+
+.login-container {
+    background-color: #ffffff; /* Fundo branco */
+    border: 1px solid #dddddd; /* Borda suave */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    padding: 20px; /* Espaçamento interno */
+    max-width: 400px; /* Largura máxima */
+    margin: 20px auto; /* Centralização na página */
+    text-align: center; /* Centraliza o texto */
+}
+
+.login-container h2 {
+    margin-bottom: 20px; /* Espaço abaixo do título */
+    color: #35424a; /* Cor do título */
+}
+
+.login-container label {
+    display: block; /* Cada label em uma nova linha */
+    margin: 10px 0 5px; /* Margens para espaçamento */
+    font-weight: bold; /* Negrito */
+    color: #333; /* Cor do texto */
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 100%; /* Largura total */
+    padding: 10px; /* Espaçamento interno */
+    border: 1px solid #cccccc; /* Borda suave */
+    border-radius: 5px; /* Bordas arredondadas */
+    box-sizing: border-box; /* Inclui padding e border na largura */
+    transition: border-color 0.3s; /* Transição suave */
+}
+
+.login-container input[type="text"]:focus,
+.login-container input[type="password"]:focus {
+    border-color: #35424a; /* Cor da borda ao focar */
+    outline: none; /* Remove contorno padrão */
+}
+
+.login-container button {
+    background-color: #35424a; /* Cor do botão */
+    color: white; /* Cor do texto */
+    border: none; /* Remove borda */
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Muda o cursor ao passar o mouse */
+    width: 100%; /* Largura total */
+    transition: background-color 0.3s; /* Transição suave */
+}
+
+.login-container button:hover {
+    background-color: #455a64; /* Cor ao passar o mouse */
+}
+
+#message {
+    margin-top: 15px; /* Espaço acima da mensagem */
+    font-size: 14px; /* Tamanho da fonte */
+}
+
+/* ----------------------------------------------------------*/
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+.cadastrar-container {
+    background-color: #ffffff; /* Fundo branco */
+    border: 1px solid #dddddd; /* Borda suave */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    padding: 20px; /* Espaçamento interno */
+    max-width: 400px; /* Largura máxima */
+    margin: 20px auto; /* Centralização na página */
+    text-align: center; /* Centraliza o texto */
+}
+
+.cadastrar-container h2 {
+    margin-bottom: 20px; /* Espaço abaixo do título */
+    color: #35424a; /* Cor do título */
+}
+
+.cadastrar-container label {
+    display: block; /* Cada label em uma nova linha */
+    margin: 10px 0 5px; /* Margens para espaçamento */
+    font-weight: bold; /* Negrito */
+    color: #333; /* Cor do texto */
+}
+
+.cadastrar-container input[type="text"],
+.cadastrar-container input[type="password"] {
+    width: 100%; /* Largura total */
+    padding: 10px; /* Espaçamento interno */
+    border: 1px solid #cccccc; /* Borda suave */
+    border-radius: 5px; /* Bordas arredondadas */
+    box-sizing: border-box; /* Inclui padding e border na largura */
+    transition: border-color 0.3s; /* Transição suave */
+}
+
+.cadastrar-container input[type="text"]:focus,
+.cadastrar-container input[type="password"]:focus {
+    border-color: #35424a; /* Cor da borda ao focar */
+    outline: none; /* Remove contorno padrão */
+}
+
+.cadastrar-container button {
+    background-color: #35424a; /* Cor do botão */
+    color: white; /* Cor do texto */
+    border: none; /* Remove borda */
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Muda o cursor ao passar o mouse */
+    width: 100%; /* Largura total */
+    transition: background-color 0.3s; /* Transição suave */
+}
+
+.cadastrar-container button:hover {
+    background-color: #455a64; /* Cor ao passar o mouse */
+}
+
+#registerMessage {
+    margin-top: 15px; /* Espaço acima da mensagem */
+    font-size: 14px; /* Tamanho da fonte */
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #35424a;
+    color: #ffffff;
+    position: relative; /* Ajusta a posição do rodapé */
+    width: 100%;
+}
